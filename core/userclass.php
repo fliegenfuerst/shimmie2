@@ -88,6 +88,24 @@ new UserClass("user", "base", [
     Permissions::BIG_SEARCH => true,
     Permissions::CREATE_IMAGE => true,
     Permissions::CREATE_COMMENT => true,
+    Permissions::EDIT_IMAGE_TAG => false,
+    Permissions::EDIT_IMAGE_SOURCE => true,
+    Permissions::EDIT_IMAGE_TITLE => true,
+    Permissions::EDIT_IMAGE_RELATIONSHIPS => true,
+    Permissions::EDIT_IMAGE_ARTIST => true,
+    Permissions::CREATE_IMAGE_REPORT => true,
+    Permissions::EDIT_IMAGE_RATING => true,
+    Permissions::EDIT_FAVOURITES => true,
+    Permissions::SEND_PM => true,
+    Permissions::READ_PM => true,
+    Permissions::SET_PRIVATE_IMAGE => true,
+    Permissions::BULK_DOWNLOAD => false,
+]);
+
+new UserClass("tagger", "base", [
+    Permissions::BIG_SEARCH => true,
+    Permissions::CREATE_IMAGE => true,
+    Permissions::CREATE_COMMENT => true,
     Permissions::EDIT_IMAGE_TAG => true,
     Permissions::EDIT_IMAGE_SOURCE => true,
     Permissions::EDIT_IMAGE_TITLE => true,
@@ -99,7 +117,9 @@ new UserClass("user", "base", [
     Permissions::SEND_PM => true,
     Permissions::READ_PM => true,
     Permissions::SET_PRIVATE_IMAGE => true,
-    Permissions::BULK_DOWNLOAD => true,
+    Permissions::BULK_DOWNLOAD => false,
+    Permissions::APPROVE_IMAGE => true,
+    Permissions::APPROVE_COMMENT => true,
 ]);
 
 new UserClass("hellbanned", "user", [
